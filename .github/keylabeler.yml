@@ -1,0 +1,31 @@
+# Determines if we search the title (optional). Defaults to true.
+matchTitle: true
+
+# Determines if we search the body (optional). Defaults to true.
+matchBody: true
+
+# Determines if label matching is case sensitive (optional). Defaults to true.
+caseSensitive: false
+
+# Explicit keyword mappings to labels. Form of match:label. Required.
+labelMappings:
+  "[automation]": automation
+  "[breaking change]": breaking change
+  "[bug]": bug
+  "[bugfix]": bugfix
+  "[customization]": customization
+  "[doc]": doc
+  "[docs]": docs
+  "[documenation]": documentation
+  "[enhancement]": enhancement
+  "[feature]": feature
+  "[fix]": fix
+  "[new feature]": new feature
+  "[refactor]": refactor
+  "[release]": release
+  "[translation]": translation
+  "[test]": test
+  "[typing]": typing
+  "[typo]": typo
+  "[wip]": wip
+  "[workflow]": workflow

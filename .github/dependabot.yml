@@ -1,0 +1,22 @@
+version: 2
+updates:
+
+  # Dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    labels:
+      - "automation"
+      - "dependency"
+      - "github-actions"
+    schedule:
+      interval: "weekly"
+
+  # Dependencies for pip
+  - package-ecosystem: "pip"
+    directory: "/"
+    labels:
+      - "pip"
+      - "automation"
+      - "dependency"
+    schedule:
+      interval: "weekly"
