@@ -21,8 +21,8 @@ To use the package, add the following to your Sphinx configuration file::
         'sphinx_collapsible_autodoc',
     ]
 
-Then, in your documentation, use the `autodoc` directive, below if an example incorporating with the 
-`autoclasstoc <https://github.com/kalekundert/autoclasstoc>`_ extension:
+Then, in your documentation, use the `autodoc` directives to generate the docs just as you would normally. 
+below if an example incorporating with the `autoclasstoc <https://github.com/kalekundert/autoclasstoc>`_ extension:
 
 .. autoclass:: example.Example
     :members:
