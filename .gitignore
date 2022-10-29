@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDE config files
+.vscode/
+.idea/
+
+# Temporary _version.py file
+sphinx_collapsible_autodoc/_version.py
