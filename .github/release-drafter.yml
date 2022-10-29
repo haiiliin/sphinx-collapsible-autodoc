@@ -1,0 +1,51 @@
+# .github/release-drafter.yml
+
+name-template: 'v$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
+filter-by-commitish: true
+commitish: main
+categories:
+  - title: '🚀 New Features'
+    labels:
+      - 'feature'
+      - 'new feature'
+      - 'enhancement'
+      - 'customization'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+      - 'test'
+      - 'typo'
+      - 'refactor'
+  - title: '📝 Documentation'
+    labels:
+      - 'documentation'
+      - 'docs'
+      - 'doc'
+  - title: '🤖 Automation'
+    labels:
+      - 'automation'
+      - 'release'
+      - 'workflow'
+version-template: '$MAJOR.$MINOR.$PATCH'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## Changes
+
+  $CHANGES
+
+  **Full Changelog**: https://github.com/haiiliin/sphinx-collapsible-autodoc/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
